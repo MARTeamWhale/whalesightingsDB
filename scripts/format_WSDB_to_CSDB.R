@@ -77,9 +77,6 @@ Behaviour_code_table <- read_csv(paste0(code_table_directory, "Behaviour_code_ta
          BEHAVIOUR_DESC_3 = BEHAVIOUR_DESC,
          BEHAVIOUR_DESC_4 = BEHAVIOUR_DESC)
 
-# Load CSDB fields template
-#CSDB_template<-read_csv(paste0(code_table_directory, "WSDBtoCSDB_template.csv"))
-
 # Load WSDB data
 WSDB_data <- read_csv(paste0(input_directory, filename, ".csv"),
                       locale = readr::locale(encoding = "Cp1252"))
